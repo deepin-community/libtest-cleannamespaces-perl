@@ -1,0 +1,90 @@
+libtest-cleannamespaces-perl (0.24-1) unstable; urgency=medium
+
+  * Import upstream version 0.24.
+  * Update debian/upstream/metadata.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.2.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 14 Dec 2018 19:12:31 +0100
+
+libtest-cleannamespaces-perl (0.23-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.23
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with Debian Policy 4.1.5
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Thu, 26 Jul 2018 04:42:14 -0300
+
+libtest-cleannamespaces-perl (0.22-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.22
+  * debian/control: add libfile-pushd-perl and libtest-needs-perl as build
+    dependencies
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Sun, 28 Aug 2016 00:15:00 -0300
+
+libtest-cleannamespaces-perl (0.19-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.19
+  * debian/control: add build and runtime dependency on
+    libsub-exporter-progressive-perl
+  * Declare complaince with Debian policy 3.9.8
+  * debian/control: update dependencies' version, thanks cme
+  * debian/control: remove some dependencies removed by upstream
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Sun, 03 Jul 2016 11:29:12 -0300
+
+libtest-cleannamespaces-perl (0.18-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * Change order of alternative (build) dependencies.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.7.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 21 Feb 2016 20:18:24 +0100
+
+libtest-cleannamespaces-perl (0.18-1) unstable; urgency=medium
+
+  * autopkgtest integration: drop (installation of) dummy perl module.
+    This is done by pkg-perl-autopkgtest now.
+  * Drop debian/tests/control, add Testsuite field to debian/control
+    instead.
+  * Update Test::Tester build dependency.
+
+  * Import upstream version 0.18.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 26 Oct 2015 17:53:01 +0100
+
+libtest-cleannamespaces-perl (0.16-1) unstable; urgency=medium
+
+  * Add debian/upstream/metadata
+  * Imported upstream version 0.16
+  * Add autopkgtest control file.
+  * Make (build) dependency on libpackage-stash-perl versioned.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 08 Sep 2014 21:52:45 +0200
+
+libtest-cleannamespaces-perl (0.14-1) unstable; urgency=low
+
+  * Initial release (closes: #757955).
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 12 Aug 2014 19:57:06 +0200

@@ -1,0 +1,45 @@
+Source: libtest-cleannamespaces-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 11)
+# don't b-d on libmoosex-role-parameterized-perl and libmoose-perl
+# to avoid circular build dependency (Moose -> Test::CleanNamespaces)
+Build-Depends-Indep: libfile-pushd-perl,
+                     libmodule-runtime-perl,
+                     libmoo-perl,
+                     libmouse-perl,
+                     libnamespace-clean-perl,
+                     libpackage-stash-perl,
+                     librole-tiny-perl (>= 1.003000),
+                     libsub-exporter-perl,
+                     libsub-exporter-progressive-perl,
+                     libsub-identify-perl,
+                     libtest-deep-perl,
+                     libtest-needs-perl,
+                     libtest-requires-perl,
+                     libtest-warnings-perl,
+                     perl (>= 5.21.6) | libtest-simple-perl (>= 1.001010),
+                     perl
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtest-cleannamespaces-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtest-cleannamespaces-perl.git
+Homepage: https://metacpan.org/release/Test-CleanNamespaces
+
+Package: libtest-cleannamespaces-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libmodule-runtime-perl,
+         libpackage-stash-perl,
+         libsub-exporter-progressive-perl,
+         libsub-identify-perl
+Recommends: libpackage-stash-xs-perl,
+            librole-tiny-perl
+Description: module to check for uncleaned imports
+ Test::CleanNamespaces lets you check your module's namespaces for imported
+ functions you might have forgotten to remove with namespace::autoclean or
+ namespace::clean and are therefore available to be called as methods, which
+ usually isn't want you want.
